@@ -19,6 +19,13 @@ class Subsequence:
 
 
     # match new sequence with search pattern
+
+    def perfectMatch(self, sequence):
+        if self.perfect in sequence:
+            return self.perfect
+
+        return []
+
     def match(self, sequence):
         if self.perfect in sequence:
             return self.perfect
